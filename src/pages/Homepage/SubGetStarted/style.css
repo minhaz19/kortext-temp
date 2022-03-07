@@ -1,0 +1,51 @@
+.SubGetStarted-upperCurve {
+  @apply bg-primary flex justify-center overflow-hidden relative;
+}
+
+.SubGetStarted-upperCurve::before {
+  content: "";
+  background: #676aef;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  @apply transform scale-x-200 md:scale-x-150 absolute top-0 left-0 w-full h-full;
+}
+
+.SubGetStarted-content {
+  z-index: 100;
+  @apply text-white flex flex-col items-center;
+}
+
+.SubGetStarted-title{
+    @apply  text-2xl md:text-6.5xl z-20 mt-10 md:mt-20;
+}
+
+.SubGetStarted-subtitle{
+    @apply w-2/3 text-center text-sm md:text-xl mt-5 md:mt-10;
+}
+
+.SubGetStarted-btn {
+    @apply bg-secondary px-5 py-2 rounded-md mt-5 md:mt-10 mb-10;
+}
+
+.SubGetStarted-lowerCurve {
+  @apply h-24 relative bg-primary overflow-hidden;
+}
+
+.SubGetStarted-lowerCurve::before {
+  content: "";
+    border-radius: 50% 50% 0 0/100% 100% 0 0;
+    @apply absolute transform scale-x-150 bg-white w-full h-full left-0 top-7;
+}
+
+@media screen and (width: 768px) {
+  .SubGetStarted-title{
+    @apply text-5xl;
+  }
+
+  .SubGetStarted-subtitle{
+    @apply text-base;
+  }
+
+  .SubGetStarted-upperCurve::before {
+    transform: scaleX(1.8);
+  }
+}

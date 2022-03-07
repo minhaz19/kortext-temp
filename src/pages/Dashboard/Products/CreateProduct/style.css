@@ -1,0 +1,9 @@
+.input-general{
+    @apply border-b ml-8 pl-0 text-xs p-1 pt-2 sm:w-96 w-9/12
+}
+.input-varient{
+    @apply border-b ml-4 pt-1 sm:w-96 w-9/12
+}
+.input-box{
+    @apply flex flex-row pt-4
+}

@@ -1,0 +1,96 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* importing slick carousel */
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+
+
+.page-enter {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.page-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}
+
+
+
+
+.desktop-init-menu ul {
+    @apply flex justify-center mx-auto pt-1;
+}
+
+.desktop-init-menu ul li {
+    @apply mx-4 text-primary text-lg uppercase transition duration-150 transform font-medium hover:text-yellow-500;
+}
+
+.collapse-menu ul {
+    @apply list-none mx-auto;
+}
+
+.collapse-menu ul li {
+    @apply text-2xl font-extrabold text-white uppercase my-4 text-center;
+}
+.closeNav {
+    width: 0;
+}
+
+.openNav {
+    width: 200px;
+    @apply px-4;
+}
+
+
+hover\:border-none:hover {
+    border-style: none;
+}
+
+#sidebar {
+    transition: ease-in-out all 0.3s;
+    z-index: 9999;
+}
+
+#sidebar span {
+    transition: ease-in-out all 0.1s;
+}
+
+.contain {
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.contain::-webkit-scrollbar {
+    display: none;
+}
+
+
+.list-item-parent:hover ul{
+    @apply block overflow-hidden;
+}
+
+*{
+    @apply font-open-sans;
+}
+
+

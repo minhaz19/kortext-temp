@@ -1,0 +1,51 @@
+.SubGetStartedReverse-upperCurve {
+  @apply bg-primary flex justify-center overflow-hidden relative;
+}
+
+.SubGetStartedReverse-upperCurve::before {
+  content: "";
+  background: #676aef;
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
+  @apply transform scale-x-200 md:scale-x-150 absolute top-0 left-0 w-full h-full;
+}
+
+.SubGetStartedReverse-content {
+  z-index: 100;
+  @apply text-white flex flex-col items-center;
+}
+
+.SubGetStartedReverse-title{
+    @apply  text-2xl md:text-6.5xl z-20 mt-10 md:mt-20;
+}
+
+.SubGetStartedReverse-subtitle{
+    @apply w-2/3 text-center text-sm md:text-xl mt-5 md:mt-10;
+}
+
+.SubGetStartedReverse-btn {
+    @apply bg-secondary px-5 py-2 rounded-md mt-5 md:mt-10 mb-10;
+}
+
+.SubGetStartedReverse-lowerCurve {
+  @apply h-24 relative bg-primary overflow-hidden;
+}
+
+.SubGetStartedReverse-lowerCurve::before {
+  content:'';
+  border-radius:0 0 50% 50%/0 0 100% 100%;
+  @apply absolute bg-white -top-7 left-0 w-full h-full transform scale-x-200 md:scale-x-150;
+}
+
+@media screen and (width: 768px) {
+  .SubGetStartedReverse-title{
+    @apply text-5xl;
+  }
+
+  .SubGetStartedReverse-subtitle{
+    @apply text-base;
+  }
+
+  .SubGetStartedReverse-upperCurve::before {
+    transform: scaleX(1.8);
+  }
+}

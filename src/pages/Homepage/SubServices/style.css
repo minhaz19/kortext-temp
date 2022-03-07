@@ -1,0 +1,9 @@
+.serviceCard-wrapper:hover{
+    box-shadow: 10px 10px 15px 5px rgb(202, 201, 201);
+    @apply transition duration-500 ease-in-out;
+}
+
+
+.serviceCard-img-container{
+    @apply h-16 w-16 grid place-items-center rounded-lg mb-5;
+}

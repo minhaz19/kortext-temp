@@ -1,0 +1,9 @@
+.subAutomateOrder-wrapper{
+    @apply grid lg:grid-cols-2 gap-10 my-10 font-open-sans px-5 md:px-20;
+}
+
+.subAutomateOrder-img-container{
+    box-shadow: 7px 7px 10px 2px rgb(235, 232, 232);
+    border-radius: 10px;
+    overflow: hidden;
+}

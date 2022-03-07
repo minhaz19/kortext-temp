@@ -1,0 +1,25 @@
+.detailsTabOpen {
+    max-height: 500px;
+    overflow: auto;
+    transition: max-height 0.7s ease-out;
+    
+}
+
+.deatilsTabClose {
+    max-height:0px;
+    overflow: hidden;
+    transition:max-height 0.7s ease-in;
+    
+    
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.detailsTabOpen::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.detailsTabOpen {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

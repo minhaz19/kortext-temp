@@ -1,0 +1,33 @@
+.input-general{
+    @apply border-b ml-8 text-xs p-2 pt-2 mt-2 sm:w-96 w-9/12
+}
+.input-box{
+    @apply flex flex-row pt-4
+}
+.card-container{
+    @apply max-w-3xl sm:w-auto bg-white my-5 pb-5 shadow-md px-5
+}
+.paragraph{
+    @apply pl-8 pt-2 text-xs text-gray-400
+}
+.paragraph-nonpadding{
+    @apply pl-8 text-xs text-gray-400
+}
+.paragraph-bpadding{
+    @apply pl-8 pb-2 text-xs text-gray-400
+}
+.heading-title{
+    @apply pl-4 text-sm w-full
+}
+.switch-head{
+    @apply grid justify-end w-full
+}
+.switch-head2{
+    @apply flex flex-row pl-8 py-3
+}
+.radio-container{
+    @apply pt-2 pl-9 text-sm
+}
+.paragraph-heading{
+    @apply text-2xl font-medium py-5
+}
